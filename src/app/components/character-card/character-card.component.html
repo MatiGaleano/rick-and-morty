@@ -1,1 +1,22 @@
-<p>character-card works!</p>
+<div class="card">
+  <img [src]="data.image" [alt]="data.name" class="card-img-top" />
+  <div class="card-body">
+    <h3>{{ data.name | slice: 0:15 }}</h3>
+    <p class="text-muted fs-5">{{ data.gender }}</p>
+    <p class="text-dark">
+      Take Part in the episode <span class="fw-bold">{{ randomEpisode }}</span>
+    </p>
+    <small class="text-muted"
+      ><span class="text-dark">Location:</span> {{ data.location.name }}</small
+    >
+  </div>
+  <div *ngIf="onCompare" class="card-footer d-flex">
+    <button
+      type="button"
+      class="col-10 offset-1 mb-3 btn btn-outline-primary"
+      (click)="onSelect.emit(this.data.id)"
+    >
+      Select
+    </button>
+  </div>
+</div>

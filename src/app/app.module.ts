@@ -14,6 +14,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { EpisodeListComponent } from './components/episode-list/episode-list.component';
 import { LocationListComponent } from './components/location-list/location-list.component';
 import { LocationDetailsComponent } from './components/location-details/location-details.component';
+import { HomeComponent } from './components/home/home.component';
+import { SearchFormComponent } from './components/search-form/search-form.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { LocationDetailsComponent } from './components/location-details/location
     FooterComponent,
     EpisodeListComponent,
     LocationListComponent,
-    LocationDetailsComponent
+    LocationDetailsComponent,
+    HomeComponent,
+    SearchFormComponent
   ],
   imports: [
     BrowserModule,

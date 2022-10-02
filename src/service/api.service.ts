@@ -10,6 +10,7 @@ import { Episode } from '../models/episode';
 export class ApiService {
   baseUrl: string = environment.API_URL;
   episode!: Episode;
+  episodeList!: Episode[];
   cast!: string[];
   private _refreshEpisode = new Subject<void>();
 

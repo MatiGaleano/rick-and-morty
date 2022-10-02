@@ -1,0 +1,96 @@
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid;
+    display: inline-block;
+    padding: 7px 12px;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    border-color: #158753;
+    background-color: #158753;
+    color: white;
+}
+
+.icon {
+   
+    margin: 3px;
+}
+.greenFocus{
+    border: 2px solid;
+    padding: 1px 4px;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    border-color: #158753;
+    background-color: white;
+    color:  #158753;
+    font-size: 27px;
+}
+
+.greenFocus:hover {
+    border-color: #00d68f;
+    color: #00d68f;
+}
+
+
+
+:host ::ng-deep ng2-smart-table table{
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    border-width: 0.5px;
+    
+    display: table;
+    border-spacing: 2px;
+    border-color: #eae9f1;
+}
+
+:host ::ng-deep ng2-smart-table table > tbody > tr > td {
+    box-sizing: border-box;
+    border: 0.5px solid #eae9f1;
+}
+
+:host ::ng-deep ng2-smart-table thead > tr > th  { 
+    border: 0.5px solid #eae9f1;
+}  
+
+:host ::ng-deep ng2-smart-table {
+    font-size:16px;
+}
+
+:host ::ng-deep ng2-smart-table a {
+    font-weight: 500;
+}
+
+:host ::ng-deep ng2-smart-table table > thead > tr > th > a.ng2-smart-action.ng2-smart-action-add-add {
+    display: flex;
+    justify-content: center;
+}
+
+:host ::ng-deep ng2-smart-table table > thead > tr > td.ng2-smart-actions {
+    display: flex;
+    justify-content: center;
+}
+
+:host ::ng-deep ng2-smart-table table > thead > tr > td.ng2-smart-actions > ng2-st-actions > a.ng2-smart-action.ng2-smart-action-add-create {
+    font-size: 17px;
+    margin-right: 5px;
+}
+
+:host ::ng-deep ng2-smart-table table > tbody > tr > td.ng2-smart-actions > ng2-st-tbody-edit-delete {
+    display: flex;
+    justify-content: center;
+}
+#conteiner-btn{
+    align-self: flex-end;
+}
+
+.strType{
+    background-color: #1e6bb8;
+    color: #fff;
+    padding: 5px 17px 5px 17px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    width: 100%;
+    text-align: start;
+}

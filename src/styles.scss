@@ -13,11 +13,8 @@ $white: $color-white;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
-body {
-  background: $light;
-  position: relative;
+:host {
   font-family: "Roboto", sans-serif;
-  color: $dark;
   line-height: 1.4rem;
   hyphens: auto;
   font-smooth: always;
@@ -25,9 +22,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: -webkit-fill-available;
 }
+body{  
+  background: $light;
+  color: $dark;
+  position: relative;
+}
 html {
   scroll-behavior: smooth;
-  height: -webkit-fill-available;
+  min-height: 100%;
+  min-height: -webkit-fill-available;
 }
 * {
   margin: 0;

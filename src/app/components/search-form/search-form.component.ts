@@ -11,7 +11,7 @@ import { FormGroup, FormBuilder } from '@angular/forms';
           formControlName="resource"
           class="form-select col-6"
           id="resource"
-          (change)="dataChange($event)"
+          (keyup)="dataChange($event)"
         >
           <option value="character">Character</option>
           <option value="episode">Episode</option>

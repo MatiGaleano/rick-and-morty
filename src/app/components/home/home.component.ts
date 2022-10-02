@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   characterList: Character[] = [];
   locationList: Location[] = [];
   episodeList: Episode[] = [];
-  resource: string = 'character';
+  resource: string = '';
 
   constructor(private service: ApiService) {}
 

@@ -1,11 +1,14 @@
-<section class="container mt-5">
-    <div class="row mb-3">
-      <div class="col-12 d-flex justify-content-center">
-        <app-search-form
-          class="col-8"
-          (searchChange)="onSearch($event)"
-        ></app-search-form>
-      </div>
+<section class="container my-5 pt-3">
+  <div class="row mb-3">
+    <div class="col-12 d-flex justify-content-center">
+      <app-search-form
+      class="col-8"
+      (searchChange)="onSearch($event)"
+      ></app-search-form>
+    </div>
+    <picture *ngIf="resource === ''" class="col-12 mt-5 d-flex">
+      <img src="/assets/images/brand_02.png" alt="Rick and Morty" class="m-auto">
+    </picture>
     </div>
     <article class="row" *ngIf="resource === 'character'">
       <app-character-card
@@ -15,17 +18,17 @@
       ></app-character-card>
     </article>
     <article class="row" *ngIf="resource === 'episode'">
-      <!-- <app-episode-card
-      class="col-12 col-md-6 col-lg-4 mb-3"
-      *ngFor="let episode of episodeList"
-      [data]="episode"
-    ></app-episode-card>
+      <app-episode-list
+      class="col-12"
+      *ngIf="episodeList"
+      [data]="episodeList"
+    ></app-episode-list>
     </article>
     <article class="row" *ngIf="resource === 'location'">
-      <app-location-card
-      class="col-12 col-md-6 col-lg-4 mb-3"
-      *ngFor="let location of locationList"
-      [data]="location"
-    ></app-location-card> -->
+      <app-location-list
+      class="col-12"
+      *ngIf="locationList"
+      [data]="locationList"
+    ></app-location-list>
     </article>
   </section>
